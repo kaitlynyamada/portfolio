@@ -275,3 +275,49 @@ works
     color: var(--color-pink);
     font-size: 13px;
 }
+
+ /* 
+=========================================================================
+contact
+========================================================================= 
+*/
+.contact-underline {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-underline--content {
+    width: 80%;
+    text-align: right;
+    border-bottom: 4px solid var(--color-violet);
+}
+
+.contact-content {
+    width: 60%;
+    padding: 50px 30px;
+}
+
+.contact-content h1 {
+    color: var(--color-violet);
+}
+
+ /* 
+=========================================================================
+footer
+========================================================================= 
+*/
+
+.footer {
+    background-color: var(--color-lavender);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-logo {
+    padding: 30px 50px;
+}
+
+.footer-nav a {
+    color: var(--color-eggplant);
+}
