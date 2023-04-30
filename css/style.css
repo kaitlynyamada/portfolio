@@ -18,90 +18,53 @@ color styles
 }
 /* 
 =========================================================================
-typography
+flex
 ========================================================================= 
 */
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
 /* 
 =========================================================================
-typography
+buttons
 ========================================================================= 
 */
-h1 h2 h3 h4 h5 h6 h6.normal {
+.button-primary {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid var(--color-violet);
+}
+
+.button-primary a {
+    text-decoration: none;
     color: var(--color-eggplant);
 }
 
-h1 {
-   font-family: 'Montserrat', sans-serif;font-weight: 800;
-   font-size: 96px;
-   margin: 0.5rem;
+.button-secondary {
+    background: white;
+    padding: 20px 55px 20px 55px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid var(--color-violet);
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    margin: 0.5rem;
+.button-secondary a {
+    text-decoration: none;
+    color: var(--color-eggplant)
 }
 
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    margin: 0.5rem;
-
+.button-hover {
+    background-color: var(--color-violet);
+    text-decoration-color: white;
 }
 
-h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    margin: 0.5rem;
-}
-
-h5 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    margin: 0.5rem;
-}
-
-h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    margin: 0.5rem;
-}
-
-h6.normal {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    margin: 0.5rem;
-}
-
-h6.small {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    margin: 0.5rem;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-p.small {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: lightgray;
-}
-
-p.bold {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+.button-hover a {
+    color: white;
 }
 /* 
 =========================================================================
@@ -113,33 +76,202 @@ navigation
 }
 /* 
 =========================================================================
-navigation
+hero
 ========================================================================= 
 */
-.hero-introduction {
-    padding: 50px 20px;
+.hero {
+    padding-bottom: 50px;
 }
-.name h1 {
+.hero-introduction {
+    padding: 50px 30px;
+}
+
+.hero-introduction h1 strong {
+    font-size: 96px;
     color: var(--color-violet);
 }
 
-strong.color {
+.hero-introduction h2 strong {
     color: var(--color-violet);
 }
 
 .hero-underline {
     display: flex;
     flex-direction: row-reverse;
-    padding: 100px 0px;
 }
 
 .hero-underline--content {
-    width: 50%;
+    width: 60%;
+    text-align: left;
+    border-bottom: 4px solid var(--color-violet);
+}
+/* 
+=========================================================================
+about me
+========================================================================= 
+*/
+.about {
+    padding: 30px 0px;
+}
+
+.about-underline {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-underline--content {
+    width: 80%;
+    text-align: right;
+    border-bottom: 4px solid var(--color-violet);
+}
+
+.about-content {
+    width: 60%;
+    padding: 50px 30px;
+}
+
+.about-content strong {
+    color: var(--color-violet);
+}
+
+.about-content a {
+    color: var(--color-pink);
+}
+
+/* 
+=========================================================================
+works
+========================================================================= 
+*/
+.works {
+
+}
+
+.works-underline {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.works-underline--content {
+    width: 80%;
     text-align: left;
     border-bottom: 4px solid var(--color-violet);
 }
 
-.hero-visual img {
-    position: absolute;
-    transform: scale(1.5);
+/*Water U Doing?*/
+.card1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.card1-visual {
+    width: 40%;
+}
+
+.card1-visual img {
+    width: 400px;
+}
+
+.card1-content {
+    width: 60%;
+}
+
+.card1-content--underline {
+    width: 100%;
+    text-align: right;
+    border-bottom: 2.5px solid var(--color-pink);
+}
+
+.card1-content--title {
+    text-align: right;
+    color: var(--color-violet);
+    padding: 15px 0px;
+}
+
+.card1-content--description {
+    text-align: right;
+
+}
+
+.card1-content--button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+
+
+.card1-content--tags {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 30px;
+}
+
+.card1-content--tags p {
+    color: var(--color-pink);
+    font-size: 13px;
+}
+
+
+/*Next Project*/
+
+.card2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.card2-visual {
+    width: 40%;
+}
+
+.card2-visual img {
+    width: 400px;
+}
+
+.card2-content {
+    width: 60%;
+}
+
+.card2-content--underline {
+    width: 100%;
+    text-align: left;
+    border-bottom: 2.5px solid var(--color-pink);
+}
+
+.card2-content--title {
+    text-align: left;
+    color: var(--color-violet);
+    padding: 15px 0px;
+}
+
+.card2-content--description {
+    text-align: left;
+
+}
+
+.card2-content--button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+
+
+.card2-content--tags {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0px 30px;
+}
+
+.card2-content--tags p {
+    color: var(--color-pink);
+    font-size: 13px;
 }
